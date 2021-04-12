@@ -1,0 +1,21 @@
+1. 'main.js'에 해당 directive를 넣어주세요.
+
+// in '/src/main.js'
+import ripple from "./directive/ripple";
+Vue.directive("bpripple", ripple);
+
+
+2. ripple 효과를 주고자 하는 HTML element에 v-bpripple 을 추가해주세요.
+
+<button v-bpripple>리플 효과</button>
+
+
+3. v-bpripple option은 다음과 같습니다.
+
+{
+  color: '원하시는 색상 코드(rgb or hex)', // default는 #eee 입니다. (색상을 부여하지 않으시면 v-bpripple 디렉티브를 적용한 Element의 배경색 기준으로 적용합니다.)
+  duration: 300, // default는 500 입니다.
+  brightNess: 1, // 0부터 1까지 리플 색상 밝기 정도이며 default는 1 입니다.
+}
+
+ex) <button v-bpripple="{color: '#ddd', duration: 500, brightNess: 0.5}">리플 효과</button>

@@ -1,0 +1,90 @@
+.test-page {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.test-page > h2 {
+  text-align: center;
+}
+
+.test-page .test-btns {
+  margin: 40px 0 35px;
+  text-align: center;
+}
+
+.test-page .test-btns > button {
+  display: inline-block;
+  margin: 5px 9px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  color: #fff;
+  text-shadow: 0 0 3px rgb(0 0 0);
+  padding: 8px 10px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+}
+
+.test-page .test-btns > button:hover {
+  transform: scale(1.02);
+}
+
+.test-page .test-btns > button.alert {
+  background-color: crimson;
+}
+
+.test-page .test-btns > button.confirm {
+  background-color: chartreuse;
+}
+
+.test-page .test-btns > button.prompt {
+  background-color: cyan;
+}
+
+.test-page .intro {
+  margin: 35px auto;
+  padding: 4px 16px;
+  width: 90%;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.test-page .intro > h4 {
+  color: #555;
+  text-shadow: 0 0 0 rgb (0 0 0 / 70%);
+}
+
+.test-page .intro > p {
+  line-height: 1.5;
+  font-size: 0.95em;
+}
+
+.test-page .intro > p > span {
+  display: block;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.test-page .intro > p > span:first-child {
+  margin-top: 40px;
+}
+
+.test-page .intro > p > span:before {
+  content: "*";
+  padding-right: 5px;
+}
+
+.test-page .page-move-btn {
+  text-align: right;
+  margin: 30px auto;
+  width: 95%;
+}
+
+.test-page .page-move-btn > a {
+  color: blue;
+}
+
+.test-page .page-move-btn > a:first-child {
+  margin-right: 15px;
+}
